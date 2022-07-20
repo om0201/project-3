@@ -76,7 +76,7 @@ img[alt="logo"] {
 /* => MAIN CONTENT */
 
 .main-content-container {
-  margin: 2rem;
+  margin: 4rem 2rem;
 
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ img[alt="logo"] {
   /* text-align: center; */
   text-transform: capitalize;
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   /* letter-spacing: 2px;
   word-spacing: 12px; */
   color: white;
@@ -112,13 +112,14 @@ img[alt="logo"] {
 .main-desc {
   margin: 0;
   /* text-align: center; */
+  font-size: 1rem;
 }
 
 /* => IMAGE */
 
 section[aria-label="display-image"] {
   content: "";
-  width: 98.75vw;
+  width: 98.7vw;
   height: 80vh;
   background-image: url(./assets/pexels-ekaterina-bolovtsova-6077326.jpg);
   background-size: cover;
@@ -142,8 +143,41 @@ section[aria-label="display-image"] {
 }
 
 .link-btns {
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.link-btn-container > div > button {
-  height: 100%;
+.link-btns:first-child {
+  background-color: #e7cf4a;
+}
+
+.link-btn {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.next-link-btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #e7cf4a;
+  border: 1px solid #2f2c2c;
+  color: #2f2c2c;
+}
+
+.link-btns:last-child {
+  background-color: #2f2c2c;
+}
+
+.prev-link-btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #2f2c2c;
+  border: 1px solid #e7cf4a;
+  color: #e7cf4a;
 }

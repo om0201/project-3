@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #2b2828;
+}
+
+.container {
+  color: #c4c4c4;
+  height: 100%;
+  /* padding: 0 2rem; */
+}
+
+/* => NAVBAR */
+
+.navbar-container {
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.logo-container {
+  flex-basis: 30%;
+}
+
+img[alt="logo"] {
+  width: 25%;
+}
+
+.navbar-container > div:nth-child(2) {
+  flex-basis: 55%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.list:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.list:first-child {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-btn-container {
+  flex-basis: 15%;
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+.nav-btn {
+  background-color: #2b2828;
+  color: #e4e000;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #e4e000;
+  border-right: 0.15px solid #e4e000;
+  border-bottom: 0.15px solid #e4e000;
+}
+
+/* => MAIN CONTENT */
+
+.main-content-container {
+  margin: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header-text-continer {
+  flex-basis: 60%;
+  /* margin: 0 2rem; */
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+.main-header {
+  /* text-align: center; */
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  /* letter-spacing: 2px;
+  word-spacing: 12px; */
+  color: white;
+  margin: 0;
+}
+
+.main-desc-text-container {
+  flex-basis: 40%;
+  margin: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-desc {
+  margin: 0;
+  /* text-align: center; */
+}
+
+/* => IMAGE */
+
+section[aria-label="display-image"] {
+  content: "";
+  width: 98.75vw;
+  height: 80vh;
+  background-image: url(./assets/pexels-ekaterina-bolovtsova-6077326.jpg);
+  background-size: cover;
+  /* background-position: left 10% bottom 20%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
+}
+
+/* => BUTTONS */
+
+.link-btn-container {
+  height: 7.5vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.link-btn-container > div {
+  height: 100%;
+}
+
+.link-btns {
+}
+
+.link-btn-container > div > button {
+  height: 100%;
+}
